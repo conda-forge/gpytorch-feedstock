@@ -1,5 +1,5 @@
 {% set name = "gpytorch" %}
-{% set version = "1.0.1" %}
+{% set version = "1.1.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 3c18464f77c463d1013ad8ad897bf1658fb5c798ed69ec050537771b1aeb5c74
+  sha256: 76bd455db2f17af5425f73acfaa6d61b8adb1f07ad4881c0fa22673f84fb571a
 
 build:
   noarch: python
@@ -46,7 +46,7 @@ about:
   license: MIT
   license_family: MIT
   license_file: LICENSE
-  summary: "An implementation of Gaussian Processes in Pytorch"
+  summary: An implementation of Gaussian Processes in Pytorch
   doc_url: https://pypi.org/project/gpytorch/
   dev_url: https://github.com/cornellius-gp/gpytorch/
 
