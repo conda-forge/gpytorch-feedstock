@@ -5,7 +5,7 @@ Home: https://gpytorch.ai
 
 Package license: MIT
 
-Feedstock license: BSD 3-Clause
+Feedstock license: BSD-3-Clause
 
 Summary: An implementation of Gaussian Processes in Pytorch
 
