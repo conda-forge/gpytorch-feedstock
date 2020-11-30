@@ -5,11 +5,13 @@ Home: https://gpytorch.ai
 
 Package license: MIT
 
-Feedstock license: BSD-3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/gpytorch-feedstock/blob/master/LICENSE.txt)
 
 Summary: An implementation of Gaussian Processes in Pytorch
 
+Development: https://github.com/cornellius-gp/gpytorch/
 
+Documentation: https://pypi.org/project/gpytorch/
 
 Current build status
 ====================
