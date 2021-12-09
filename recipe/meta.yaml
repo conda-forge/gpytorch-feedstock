@@ -52,6 +52,7 @@ about:
 
 extra:
   recipe-maintainers:
+    - ngam
     - mxr-conda
     - oblute
     - benhuff
