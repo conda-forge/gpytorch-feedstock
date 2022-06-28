@@ -19,10 +19,13 @@ build:
 requirements:
   host:
     - pip
-    - python >=3.6
+    - python >=3.7
   run:
-    - python >=3.6
-    - pytorch >=1.9
+    - python >=3.7
+    - pytorch >=1.10
+    - numpy
+    - scikit-learn<=1.0.2
+    - scipy
 
 test:
   imports:
@@ -41,7 +44,10 @@ test:
     - gpytorch.models.pyro
     - gpytorch.priors
     - gpytorch.test
-#     - test
+  requires:
+    - pip
+  commands:
+    - pip check
 
 about:
   home: https://gpytorch.ai
