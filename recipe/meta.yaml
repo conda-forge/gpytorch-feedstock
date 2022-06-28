@@ -44,10 +44,7 @@ test:
     - gpytorch.models.pyro
     - gpytorch.priors
     - gpytorch.test
-  requires:
-    - pip
-  commands:
-    - pip check
+
 
 about:
   home: https://gpytorch.ai
