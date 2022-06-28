@@ -24,7 +24,8 @@ requirements:
     - python >=3.7
     - pytorch >=1.10
     - numpy
-    - scikit-learn <=1.0.2
+    - scikit-learn <=1.0.2  # [py<38]
+    - scikit-learn          # [py>37]
     - scipy
 
 test:
