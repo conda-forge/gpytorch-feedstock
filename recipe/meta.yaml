@@ -1,5 +1,5 @@
 {% set name = "gpytorch" %}
-{% set version = "1.6.0" %}
+{% set version = "1.7.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,11 +7,11 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 08e8f1a80669dc3eee5ba237fc00c867a8858f9b186bbec8571a8cf9af36f543
+  sha256: e91cb8a1883d54f8f57cebbc0c61c227b3cd72528d8e90e770f971fc4e408538
 
 build:
   noarch: python
-  number: 1
+  number: 0
   script:
     - rm -rf test
     - {{ PYTHON }} -m pip install . -vv
@@ -19,10 +19,13 @@ build:
 requirements:
   host:
     - pip
-    - python >=3.6
+    - python >=3.7
   run:
-    - python >=3.6
-    - pytorch >=1.9
+    - python >=3.7
+    - pytorch >=1.10
+    - numpy
+    - scikit-learn <=1.0.2
+    - scipy
 
 test:
   imports:
@@ -41,7 +44,10 @@ test:
     - gpytorch.models.pyro
     - gpytorch.priors
     - gpytorch.test
-#     - test
+  requires:
+    - pip
+  commands:
+    - pip check
 
 about:
   home: https://gpytorch.ai
