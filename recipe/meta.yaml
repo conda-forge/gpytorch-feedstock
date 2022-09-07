@@ -1,5 +1,5 @@
 {% set name = "gpytorch" %}
-{% set version = "1.8.1" %}
+{% set version = "1.9.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: fe8e412a73a2b07027e30c65c61323de15ebcef439f5bd21200cf26551fd0e30
+  sha256: a0608184c18a1f518d6a102473427abf00f5351421e12a934530953f6887b34b
 
 build:
   noarch: python
@@ -21,6 +21,7 @@ requirements:
     - pip
     - python >=3.7
   run:
+    - linear_operator
     - python >=3.7
     - pytorch >=1.10
     - numpy
