@@ -152,4 +152,5 @@ Feedstock Maintainers
 * [@mxr-conda](https://github.com/mxr-conda/)
 * [@ngam](https://github.com/ngam/)
 * [@oblute](https://github.com/oblute/)
+* [@thewchan](https://github.com/thewchan/)
 
