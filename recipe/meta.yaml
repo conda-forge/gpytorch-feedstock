@@ -1,5 +1,5 @@
 {% set name = "gpytorch" %}
-{% set version = "1.11" %}
+{% set version = "1.12" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 72fbb72b8965e37e7bd53c5f17d08747a404d048e80ec9d9983dee51685d2760
+  sha256: dc2c160af72364189f5b1fd7c804f69bdbcd8c65bfd3da5c9c2fc34029639adf
 
 build:
   noarch: python
