@@ -21,7 +21,7 @@ requirements:
     - pip
     - python >=3.8
     - setuptools_scm
-    - setupstools
+    - setuptools
   run:
     - python >=3.8
     - pytorch >=2.0
