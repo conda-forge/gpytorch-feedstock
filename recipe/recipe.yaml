@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: gpytorch
-  version: "1.14.3"
+  version: "1.15"
 
 package:
   name: ${{ name|lower }}
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/${{ name }}-${{ version }}.tar.gz
-  sha256: 3341b6fd71b67b8df1c6e59229e1d675775929125cf72d391dacdb7f98bbeab5
+  sha256: 6bada2e450bfa001f03f6ab47f72bd02d0653e4912781662a9f5f5c62b406385
 
 build:
   number: 0
